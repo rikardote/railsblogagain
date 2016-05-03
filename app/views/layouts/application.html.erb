@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Testapp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header>
+	<nav class="be-red white">
+		<ul class="no-list row center-xs">
+				<li class="col-md">
+					Inicio		
+				</li>
+				<li class="col-md">
+					Diseno		
+				</li>
+				<li class="col-md">
+					Programacion
+				</li>
+		</ul>
+	</nav>
+</header>
+	<%= yield %>
+</body>
+</html>
